@@ -5,6 +5,10 @@ const app = express()
 app.use(cors())
 const port = 3000
 
+app.get('/', () => {
+  res.status(200).send("OK")
+})
+
 app.get('/gameService', (req, res) => {
   
   const reelValues = [
